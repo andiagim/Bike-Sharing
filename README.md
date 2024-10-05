@@ -1,20 +1,14 @@
-# Olist E-Commerce Dashboard
+# Bike Sharing Dataset Dashboard
 
-Data yang akan dianalisis adalah data dari perusahan **Olist E-Commerce** yang bisa didapat di [E-Commerce Public Dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce), berikut pertanyaan bisnis yang bisa dirumuskan dari data-data yang ada:
+Proyek ini menganalisis dataset Bike Sharing dari **Bike Sharing Dataset Kaggle** yang dapat diakses melalui [https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset](https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset), dan hasil analisisnya akan disajikan dalam dashboard interaktif menggunakan Streamlit.
 
-1. Bagaimana performa penjualan dan revenue Olist E-Commerce dalam beberapa bulan terakhir?
-2. Kategori produk apa yang paling banyak dan paling sedikit terjual?
-3. Bagaimana demografi pelanggan yang Olist E-Commerce miliki?
-
-Untuk menjawab pertanyaan-pertanyaan diatas, proyek ini akan menjawabnya untuk anda.
-
-> **Live Dashboard**: [https://data-analyst-submission.streamlit.app](https://data-analyst-submission.streamlit.app/)
+> **Live Dashboard**: [https://bike-sharing-agim.streamlit.app](https://bike-sharing-agim.streamlit.app/)
 
 ## Setup Environment (Shell/Terminal)
 
 ```
-git clone https://github.com/freack21/data_analyst_submission.git
-cd data_analyst_submission
+git clone https://github.com/andiagim/Bike-Sharing.git
+cd Bike-Sharing
 pipenv install
 pipenv shell
 ```
@@ -22,5 +16,5 @@ pipenv shell
 ## Run Dashboard (Streamlit)
 
 ```
-streamlit run ./dashboard/dashboard.py
+streamlit run dashboard.py
 ```
