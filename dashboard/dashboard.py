@@ -32,8 +32,8 @@ def macem_season(day_df):
     season_df = day_df.groupby('season')['cnt'].sum().reset_index()
     return season_df
 
-days_df = pd.read_csv(r"C:\Users\Lenovo\Documents\Python\dashboard\main_data.csv")
-hours_df = pd.read_csv(r"C:\Users\Lenovo\Documents\Python\dashboard\main_data0.csv")
+days_df = pd.read_csv("dashboard\main_data.csv")
+hours_df = pd.read_csv("dashboard\main_data0.csv")
 
 datetime_columns = ["dteday"]
 days_df.sort_values(by="dteday", inplace=True)
@@ -54,7 +54,7 @@ max_date_hour = hours_df["dteday"].max()
 
 with st.sidebar:
  
-    st.image(r"C:\Users\Lenovo\Documents\Python\dashboard\logo.jpeg")
+    st.image("dashboard\logo.jpeg")
     
         
     start_date, end_date = st.date_input(
